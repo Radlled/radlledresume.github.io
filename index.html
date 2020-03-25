@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Никита Логунов</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="css/jquery.circliful.css">
+	</head>
+
+	<body>
+		<img class="mBg" src="img/bg.png">
+		<section class="main">
+			<header class="mHeader">
+				<img src="img/logo.png">
+				<ul class="header-list">
+					<li><a href="index.html">Резюме</a></li>
+					<li><a href="">Портфолио</a></li>
+					<li><a href="">Связь</a></li>
+				</ul>
+			</header>
+
+			<section class="blockOne">
+				<div class="hello">
+					<h1>Привет мир!</h1>
+					<p>Меня зовут <strong>Никита Логунов</strong><br>
+					Я обучаюсь верстке сайтов и пробую себя в этом деле.<br>
+					Этот сайт сделан для моего резюме и портфолио.
+					</p>
+				</div>
+			</section>
+			<section class="blockTwo">
+
+				<h1>Мои навыки</h1>
+				
+		        <div class="col-lg-2">
+		        	<h2>Html</h2>
+		            <div id="test-circle"></div>
+		        </div>
+
+		        <div class="col-lg-2">
+		        	<h2>Css</h2>
+		            <div id="test-circle2"></div>
+		        </div>
+
+		        <div class="col-lg-2">
+		        	<h2>JavaScript</h2>
+		            <div id="test-circle3"></div>
+		        </div>
+			</section>
+
+		</section>
+
+		<section class="footer">
+			<p>copyright ©<br>
+			2020</p>
+		<section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="js/jquery.circliful.js"></script>
+	</body>
+	<script>
+    $( document ).ready(function() { // 6,32 5,38 2,34
+        $("#test-circle").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 15,
+            percent: 40,
+            textSize: 28,
+            textFamily: 'font-family: "Pacifico", Arial, sans-serif;',
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+        });
+        $("#test-circle2").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 15,
+            percent: 35,
+            textSize: 28,
+            textFamily: 'font-family: "Pacifico", Arial, sans-serif;',
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+        });
+      	$("#test-circle3").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 15,
+            percent: 2,
+            textSize: 28,
+            textFamily: 'font-family: "Pacifico", Arial, sans-serif;',
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+        });
+        $("#test-circle4").circliful({
+            animation: 1,
+            animationStep: 1,
+            target: 10,
+            start: 2,
+            showPercent: 1,
+            backgroundColor: '#000',
+            foregroundColor: '#A8C64A',
+            fontColor: '#000',
+            iconColor: '#000',
+            icon: 'f0a0',
+            iconSize: '40',
+            iconPosition: 'middle',
+            text: 'No Kids'
+        });
+        $("#test-circle5").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            animateInView: true,
+            percent: 80,
+            icon: 'f0a0',
+            iconPosition: 'middle',
+            text: 'Space Left',
+            textBelow: true
+        });
+        $("#test-circle6").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 7,
+            backgroundBorderWidth: 7,
+            textSize: 28,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            multiPercentage: 1,
+            percentages: [
+                {'percent': 10, 'color': '#3180B8', 'title': 'Gryffindor' },
+                {'percent': 30, 'color': '#4ADBEA', 'title': 'Ravenclaw' },
+                {'percent': 50, 'color': '#49EBA8', 'title': 'Hufflepuff' },
+                {'percent': 70, 'color': '#FFCA35', 'title': 'Slytherin' }
+            ],
+            multiPercentageLegend: 1,
+            replacePercentageByText: '',
+            backgroundColor: '#eee',
+            icon: 'f0d0',
+            iconPosition: 'middle'
+        });
+        $("#test-circle7").circliful({
+            animation: 0,
+            animationStep: 1,
+            animateInView: true,
+            percent: 80,
+            textSize: 28,
+            textStyle: 'font-size: 12px;',
+            textColor: '#666',
+            progressColor: {20: '#CC9487', 40: '#FA6C00', 60: '#FF6C99'}
+        });
+    });
+</script>
+</html>
